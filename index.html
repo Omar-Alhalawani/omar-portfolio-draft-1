@@ -1220,9 +1220,10 @@
                 <!-- FormSubmit config -->
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
-                <!-- Optional: update this URL after you deploy -->
-                <input type="hidden" name="_next" value="https://YOUR_GITHUB_USERNAME.github.io/success.html">
-
+              
+                <!-- Redirect back to contact section WITH success message -->
+                <input type="hidden" name="_next" value="https://omar-alhalawani.github.io/#contact-success">
+              
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
@@ -1237,23 +1238,42 @@
                     </div>
                   </div>
                 </div>
-
+              
                 <div class="form-group">
                   <label>Subject</label>
                   <input type="text" name="subject" required="">
                 </div>
-
+              
                 <div class="form-group">
                   <label for="projectMessage">Message</label>
                   <textarea name="message" id="projectMessage" rows="5" required=""></textarea>
                 </div>
-
+              
+                <!-- Inline success message -->
+                <div id="contact-success" class="my-3" style="display:none;">
+                  <div class="sent-message" style="display:block;">
+                    Your message was sent successfully — thank you!
+                  </div>
+                </div>
+              
                 <button type="submit" class="submit-btn">
                   <span>Send Message</span>
                   <i class="bi bi-arrow-right"></i>
                 </button>
-
+              
               </form>
+              
+              <script>
+                // Show success message when redirected with #contact-success
+                if (window.location.hash === "#contact-success") {
+                  const successBox = document.getElementById("contact-success");
+                  successBox.style.display = "block";
+                  setTimeout(() => {
+                    window.location.hash = "";
+                  }, 10);
+                }
+              </script>
+
 
             </div>
 
