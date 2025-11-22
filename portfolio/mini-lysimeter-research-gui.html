@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Mini-Lysimeter Research GUI - Omar Alhalawani</title>
+  <meta name="description" content="Multithreaded Python GUI for soil mechanics experiments combining NI-DAQ and Arduino at 100 Hz.">
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Raleway:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/css/main.css" rel="stylesheet">
+</head>
+<body class="inner-page">
+<header id="header" class="header dark-background d-flex flex-column justify-content-between">
+  <i class="header-toggle d-xl-none bi bi-list"></i>
+  <div class="header-top">
+    <div class="profile-img">
+      <img src="../assets/img/profile/profile-square-14.webp" alt="Profile photo of Omar" class="img-fluid">
+    </div>
+    <a href="../index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Omar Alhalawani</h1>
+    </a>
+  </div>
+  <nav id="navmenu" class="navmenu">
+    <ul>
+      <li><a href="../index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+      <li><a href="../index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+      <li><a href="../index.html#portfolio" class="active"><i class="bi bi-images navicon"></i> Projects</a></li>
+      <li><a href="../index.html#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+      <li><a href="../index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+    </ul>
+  </nav>
+  <div class="social-links text-center">
+    <a href="https://github.com/Omar-Alhalawani" class="github" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+    <a href="https://linkedin.com/in/omar-alhalawani" class="linkedin" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+    <a href="mailto:omar.alhalawani2006@gmail.com" class="email"><i class="bi bi-envelope"></i></a>
+  </div>
+</header>
+<main class="main">
+
+<section class="portfolio-details section">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>Mini-Lysimeter Research GUI</h2>
+      <p>Multithreaded data acquisition and visualization tool for soil mechanics experiments.</p>
+    </div>
+    <div class="row gy-4">
+      <div class="col-lg-7">
+        <img src="../assets/img/portfolio/portfolio-7.webp" alt="Mini-Lysimeter GUI" class="img-fluid mb-4">
+        <p>
+          The Mini-Lysimeter Research GUI is a Python-based system that integrates an NI-DAQ 9219 module and an Arduino
+          to capture sensor data at 100 Hz. It was built to support soil mechanics experiments in a civil engineering lab.
+        </p>
+        <p>
+          The interface uses Tkinter and Matplotlib to provide synchronized multi-sensor plots, start/stop controls, and
+          a clear view of experiment progress. Under the hood, multithreading keeps acquisition responsive while the GUI
+          stays smooth.
+        </p>
+      </div>
+      <div class="col-lg-5">
+        <div class="portfolio-info">
+          <h3>Project Info</h3>
+          <ul>
+            <li><strong>Role</strong>: Engineering Office & Laboratory Assistant</li>
+            <li><strong>Tech</strong>: Python, Tkinter, Matplotlib, NI-DAQ 9219, Arduino</li>
+            <li><strong>Year</strong>: 2025</li>
+          </ul>
+        </div>
+        <div class="portfolio-description">
+          <h4>Key Features</h4>
+          <ul>
+            <li>Multithreaded acquisition loop at 100 Hz for multiple channels.</li>
+            <li>Real-time plots with synchronized axes and auto-scaling.</li>
+            <li>Configurable autosave intervals with timestamped CSV files.</li>
+            <li>Designed for zero-loss long-term logging during multi-hour experiments.</li>
+          </ul>
+          <h4>Impact</h4>
+          <p>
+            The tool replaced manual recording and ad-hoc scripts with a single, reliable interface.
+            It reduced setup time, made experiments easier to monitor, and produced clean datasets ready
+            for analysis without extra cleanup steps.
+          </p>
+        </div>
+        <a href="../index.html#portfolio" class="btn-primary mt-3 d-inline-flex align-items-center">
+          <i class="bi bi-arrow-left me-2"></i> Back to Projects
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer id="footer" class="footer light-background">
+  <div class="container">
+    <h3 class="sitename">Omar Alhalawani</h3>
+    <p>Computer Systems Engineering student focused on embedded systems, FPGA design, robotics, repair, and community tech.</p>
+    <div class="social-links d-flex justify-content-center">
+      <a href="https://github.com/Omar-Alhalawani" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+      <a href="https://linkedin.com/in/omar-alhalawani" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+      <a href="mailto:omar.alhalawani2006@gmail.com"><i class="bi bi-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<div id="preloader"></div>
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/vendor/aos/aos.js"></script>
+<script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

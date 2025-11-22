@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>BCD to 7-Segment Decoder (FPGA) - Omar Alhalawani</title>
+  <meta name="description" content="Verilog-based BCD to 7-segment decoder implemented and tested on FPGA hardware.">
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Raleway:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/css/main.css" rel="stylesheet">
+</head>
+<body class="inner-page">
+<header id="header" class="header dark-background d-flex flex-column justify-content-between">
+  <i class="header-toggle d-xl-none bi bi-list"></i>
+  <div class="header-top">
+    <div class="profile-img">
+      <img src="../assets/img/profile/profile-square-14.webp" alt="Profile photo of Omar" class="img-fluid">
+    </div>
+    <a href="../index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Omar Alhalawani</h1>
+    </a>
+  </div>
+  <nav id="navmenu" class="navmenu">
+    <ul>
+      <li><a href="../index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+      <li><a href="../index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+      <li><a href="../index.html#portfolio" class="active"><i class="bi bi-images navicon"></i> Projects</a></li>
+      <li><a href="../index.html#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+      <li><a href="../index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+    </ul>
+  </nav>
+  <div class="social-links text-center">
+    <a href="https://github.com/Omar-Alhalawani" class="github" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+    <a href="https://linkedin.com/in/omar-alhalawani" class="linkedin" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+    <a href="mailto:omar.alhalawani2006@gmail.com" class="email"><i class="bi bi-envelope"></i></a>
+  </div>
+</header>
+<main class="main">
+
+<section class="portfolio-details section">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>BCD to 7-Segment Decoder (FPGA)</h2>
+      <p>Hardware implementation of a BCD-to-7-segment decoder using Verilog and K-map minimization.</p>
+    </div>
+    <div class="row gy-4">
+      <div class="col-lg-7">
+        <img src="../assets/img/portfolio/portfolio-3.webp" alt="BCD to 7-segment FPGA design" class="img-fluid mb-4">
+        <p>
+          This project implements a BCD-to-7-segment decoder that drives a common anode display from a 4-bit input.
+          The logic for each segment was minimized using Karnaugh maps to reduce gate count and simplify the design.
+        </p>
+        <p>
+          The final Verilog modules were simulated in ModelSim/Logisim and then synthesized in Vivado for deployment
+          on Blackboard FPGA hardware. A custom constraints file was prepared to map pins to the correct switches and LEDs.
+        </p>
+      </div>
+      <div class="col-lg-5">
+        <div class="portfolio-info">
+          <h3>Project Info</h3>
+          <ul>
+            <li><strong>Tech</strong>: Verilog, Vivado, ModelSim, Blackboard FPGA</li>
+            <li><strong>Focus</strong>: Digital design, Boolean logic, FPGA implementation</li>
+            <li><strong>Year</strong>: 2025</li>
+          </ul>
+        </div>
+        <div class="portfolio-description">
+          <h4>What I Did</h4>
+          <ul>
+            <li>Derived minimized expressions for all seven segments using K-maps.</li>
+            <li>Implemented the decoder as modular Verilog components.</li>
+            <li>Created and debugged testbenches to validate digits 0–9.</li>
+            <li>Fixed pin mappings and verified stable timing on real hardware.</li>
+          </ul>
+          <h4>Takeaways</h4>
+          <p>
+            This project reinforced how theoretical digital logic maps onto real FPGA implementations
+            and the importance of constraint files, timing, and simulation when moving from diagrams to hardware.
+          </p>
+        </div>
+        <a href="../index.html#portfolio" class="btn-primary mt-3 d-inline-flex align-items-center">
+          <i class="bi bi-arrow-left me-2"></i> Back to Projects
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer id="footer" class="footer light-background">
+  <div class="container">
+    <h3 class="sitename">Omar Alhalawani</h3>
+    <p>Computer Systems Engineering student focused on embedded systems, FPGA design, robotics, repair, and community tech.</p>
+    <div class="social-links d-flex justify-content-center">
+      <a href="https://github.com/Omar-Alhalawani" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+      <a href="https://linkedin.com/in/omar-alhalawani" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+      <a href="mailto:omar.alhalawani2006@gmail.com"><i class="bi bi-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<div id="preloader"></div>
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/vendor/aos/aos.js"></script>
+<script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
